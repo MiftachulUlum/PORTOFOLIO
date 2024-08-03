@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+                    Miftachul Ulum
+            </title>
+	<link rel="canonical" href="https://fah.li" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logos/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/logos/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/logos/safari-pinned-tab.svg" color="#0b1120">
+    <meta name="msapplication-TileColor" content="#0b1120">
+    <meta name="theme-color" content="#0b1120">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tags.css">
+    <link rel="stylesheet" href="assets/css/plane.css">
+    <link rel="stylesheet" href="assets/vendors/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/devicon.css">
+    <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}</style>
+    <script data-navigate-once src="assets/js/jquery.js"></script>
+    <script data-navigate-once src="assets/js/feather.js"></script>
+    <script data-navigate-once src="assets/js/theme.js"></script>
+    <script data-navigate-once>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function() {
+                navigator.serviceWorker
+                    .register("serviceWorker.js")
+                    .then((res) => console.log("Service worker registered"))
+                    .catch((err) => console.log("Couldn't register service worker. Caused by ", err));
+            });
+        }
+    </script>
+    <meta name="csrf-token" content="1KEtKWO3Ai8JbmHnsdCJlUChjZ2PHHGFjuCHuT8Q">
+</head>
+<body class="bg-dynamic-primary">
+  <div class="loading-spinner loading-spinner-top-right" wire:loading>
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid container-lg">
+            <div x-persist="button_menu">
+                <button class="navbar-toggler main-menu-toggle menu-toggle" data-bs-toggle="offcanvas"
+                    data-bs-target="#mainMenuCanvas" aria-controls="mainMenuCanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                </button>
+            </div>
+            <div x-persist="logo">
+                <a class="navbar-brand nav-dark d-none" href="#">
+                    <img class="logo" src="assets/img/logos/logo_dark.png" alt="Logo" loading="lazy">
+                </a>
+                <a class="navbar-brand nav-light d-none" href="#">
+                    <img class="logo" src="assets/img/logos/logo_light.png" alt="Logo" loading="lazy">
+                </a>
+            </div>
+            <div class="d-flex d-lg-none">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-icon search-button">
+                            <i data-feather="command" class="icon feather-16"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-icon theme-switcher">
+                            <i data-feather="sun" class="icon feather-16"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link nav-icon language-button">
+                          <i data-feather="globe" class="icon feather-16"></i>
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link semibold active"
+                            aria-current="page" href="index.html" wire:navigate>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semibold "
+                            aria-current="page" href="en/about.html" wire:navigate>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semibold " aria-current="page" href="en/projects.html" wire:navigate>
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semibold " aria-current="page" href="en/blog.html" wire:navigate>
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semibold " aria-current="page" href="en/community.html" wire:navigate>
+                            Community Wall
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link semibold " aria-current="page" href="en/contact.html" wire:navigate>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon search-button">
+                                <div x-persist="icon-1">
+                                <i data-feather="command" class="icon feather-16"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon theme-switcher" aria-current="page">
+                                <div x-persist="icon-2">
+                                <i data-feather="sun" class="icon feather-16"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon language-button" aria-current="page">
+                                <div x-persist="icon-4">
+                                <i data-feather="globe" class="icon feather-16"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary ms-1 semibold d-flex gap-2" href="en/contact.html" wire:navigate>
+                        Hire Me
+                        <div x-persist="icon-3">
+                        <i data-feather="arrow-right" class="icon-margin feather-16"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="mainMenuCanvas"
+        aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link semibold active"
+                 aria-current="page" href="index.html" wire:navigate>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link semibold "
+                 aria-current="page" href="en/about.html" wire:navigate>
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link semibold " aria-current="page" href="en/projects.html" wire:navigate>
+                Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link semibold " aria-current="page" href="en/blog.html" wire:navigate>
+                Blog
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link semibold " aria-current="page" href="en/community.html" wire:navigate>
+                Community Wall
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link semibold " aria-current="page" href="en/contact.html" wire:navigate>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div wire:snapshot="{&quot;data&quot;:[],&quot;memo&quot;:{&quot;id&quot;:&quot;mwUIT8yrKGZ0ivJNDllN&quot;,&quot;name&quot;:&quot;home&quot;,&quot;path&quot;:&quot;en&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;a86f22ddb1ee9e0200b1d6c1e741659b85fd0d82a97703120b977235daea6374&quot;}" wire:effects="[]" wire:id="mwUIT8yrKGZ0ivJNDllN" class="reveal">
+    <div class="main">
+        <div class="grid grid-primary grid-dissolve grid-dissolve-primary">
+          <div class="glow-navbar">
+            <br><br><br>
+          </div>
+          <div class="glow-background-1">
+              <br><br><br>
+          </div>
+          <div class="container pt-5 top-hero">
+            <div class="row">
+                <div
+                    class="col-12 col-md-7
+                    order-2 order-md-1 d-flex
+                    align-items-center text-center
+                    text-md-start text-dynamic-primary">
+                    <div>
+                        <div class="header-text-container mt-5 mt-lg-0 reveal reveal-left">
+                            <h1 class="bold">
+                                Hi, call me Ulum. I'm a
+                                <span class="magic">
+                                    <span class="magic-star">
+                                        <svg viewBox="0 0 512 512">
+                                            <path
+                                                d="M512 255.1c0
+                                            11.34-7.406 20.86-18.44
+                                            23.64l-171.3 42.78l-42.78
+                                            171.1C276.7 504.6 267.2 512 255.9
+                                            512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47
+                                            279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83
+                                            18.44-23.61l171.2-42.78l42.78-171.1C235.2
+                                            7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78
+                                            171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                        </svg>
+                                    </span>
+                                    <span class="magic-star">
+                                        <svg viewBox="0 0 512 512">
+                                            <path
+                                                d="M512 255.1c0
+                                            11.34-7.406 20.86-18.44
+                                            23.64l-171.3 42.78l-42.78
+                                            171.1C276.7 504.6 267.2 512 255.9
+                                            512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47
+                                            279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83
+                                            18.44-23.61l171.2-42.78l42.78-171.1C235.2
+                                            7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78
+                                            171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                        </svg>
+                                    </span>
+                                    <span class="magic-star">
+                                        <svg viewBox="0 0 512 512">
+                                            <path
+                                                d="M512 255.1c0
+                                            11.34-7.406 20.86-18.44
+                                            23.64l-171.3 42.78l-42.78
+                                            171.1C276.7 504.6 267.2 512 255.9
+                                            512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47
+                                            279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83
+                                            18.44-23.61l171.2-42.78l42.78-171.1C235.2
+                                            7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78
+                                            171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                        </svg>
+                                    </span>
+                                    <span class="magic-text">Full Stack Engineer</span>
+                                </span>
+                            </h1>
+                        </div>
+                        <p class="mb-4 text-xl reveal reveal-left">
+                            Experienced in designing and developing software solutions in web, mobile or desktop platform. I'm passionate about building software that can help people and businesses to grow. Also certified as network engineer.
+                        </p>
+                        <a class="btn-hero bold me-sm-4 reveal reveal-left no-underline" href="en/blog.html" wire:navigate>
+                            Read the blog
+                            <div class="arrow-wrapper">
+                                <div class="arrow"></div>
+                            </div>
+                        </a>
+                        <span class="d-block d-sm-inline mt-3 mt-sm-0">
+                            <a class="btn-arrow bold reveal reveal-left no-underline" href="en/about.html" wire:navigate>
+                                <p>Know me more</p>
+                                <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none"
+                                    class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round">
+                                    </path>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 order-1 order-md-2 text-center text-md-end reveal reveal-scale-down"
+                    style="overflow: hidden;">
+                    <img src="assets/img/photos/ulum_4.png" alt="Miftachul Ulum" width="90%" loading="lazy">
+                    <div class="like-button-container">
+                      <button class="like-button" data-icon="love"️>
+                        ❤️
+                      </button>
+                      <button class="like-button" data-icon="fire">
+                        🔥
+                      </button>
+                      <button class="like-button" data-icon="rocket">
+                        🚀
+                      </button>
+                      <button class="like-button" data-icon="wow">
+                        🤯
+                      </button>
+                    </div>
+                    <div class="like-container">
+                      <div class="hearts"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container pt-5 pb-5">
+            <h1 class="bold text-dynamic-primary reveal reveal-left text-center">
+                Developing software with 7 years+ of experiences
+            </h1>
+            <p class="text-dynamic-primary text-xl reveal reveal-left text-center">
+                Get to know programming since junior hight school until now. I've worked in various companies and projects.
+            </p>
+            <div class="row mt-5 mb-5 pb-5">
+                <div class="col-12 col-lg-6 mt-2">
+                    <div class="card">
+                        <div class="tools">
+                            <div class="circle">
+                                <span class="red box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="yellow box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="green box"></span>
+                            </div>
+                        </div>
+                        <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                            <p class="bold text-dynamic-secondary text-center"><i data-feather="briefcase"
+                                    class="feather-24 icon-margin me-1"></i> Experiences</p>
+                            <hr>
+                            <!--[if BLOCK]><![endif]-->                              <div class="d-flex reveal reveal-scale-up">
+                                  <div class="me-4 mt-2">
+                                    <img src="assets/img/logos/jasajokimurah.jpeg" alt="Jasa Joki Murah" class="logo-experience">
+                                  </div>
+                                  <div class="d-flex flex-grow-1">
+                                    <div class="flex-grow-1 me-3">
+                                        <p class="text-sm text-dynamic-secondary">
+                                          <span class="d-inline-block d-sm-none"
+                                            href="en/joki.html" wire:navigate>
+                                            Full-time /
+                                          </span>
+                                          <span href="en/joki.html" wire:navigate>
+                                            Dec 2023 - Present
+                                          </span>
+                                        </p>
+                                        <p class="bold text-dynamic-primary" style="margin-top: -15px;"
+                                          href="en/joki.html" wire:navigate>
+                                          Chief Executive Officer</p>
+                                        <p class="text-sm text-dynamic-primary" style="margin-top: -15px;"
+                                          href="en/joki.html" wire:navigate>
+                                          Jasa Joki Murah
+                                        </p>
+                                    </div>
+                                    <div class="flex-shrink-0 text-end d-none d-sm-block">
+                                        <small class="text-sm text-dynamic-secondary">
+                                          Full-time
+                                        </small>
+                                    </div>
+                                  </div>
+                              </div>
+                                                          <div class="d-flex reveal reveal-scale-up">
+                                  <div class="me-4 mt-2">
+                                    <img src="assets/img/logos/reka.png" alt="PT Rekavisitama" class="logo-experience">
+                                  </div>
+                                  <div class="d-flex flex-grow-1">
+                                    <div class="flex-grow-1 me-3">
+                                        <p class="text-sm text-dynamic-secondary">
+                                          <span class="d-inline-block d-sm-none"
+                                            href="en/reka.html" wire:navigate>
+                                            Internship /
+                                          </span>
+                                          <span href="en/reka.html" wire:navigate>
+                                            Jan - Jun 2021
+                                          </span>
+                                        </p>
+                                        <p class="bold text-dynamic-primary" style="margin-top: -15px;"
+                                          href="en/reka.html" wire:navigate>
+                                          Network Technician</p>
+                                        <p class="text-sm text-dynamic-primary" style="margin-top: -15px;"
+                                          href="en/reka.html" wire:navigate>
+                                          PT Rekavisitama
+                                        </p>
+                                    </div>
+                                    <div class="flex-shrink-0 text-end d-none d-sm-block">
+                                        <small class="text-sm text-dynamic-secondary">
+                                          Internship
+                                        </small>
+                                    </div>
+                                  </div>
+                              </div>
+                                                          
+                              
+                            <!--[if ENDBLOCK]><![endif]-->
+                            <!--[if BLOCK]><![endif]-->                              <div class="text-center mt-4">
+                                <a class="footer-link-source semibold"
+                                    href="en/resume.html" wire:navigate>
+                                    See all experiences
+                                  <i data-feather="arrow-right" class="icon-margin feather-16"></i>
+                                </a>
+                              </div>
+                            <!--[if ENDBLOCK]><![endif]-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-2">
+                    <div class="card" style="height: 100%;">
+                        <div class="tools">
+                            <div class="circle">
+                                <span class="red box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="yellow box"></span>
+                            </div>
+                            <div class="circle">
+                                <span class="green box"></span>
+                            </div>
+                        </div>
+                        <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                            <p class="bold text-dynamic-secondary text-center"><i data-feather="book-open"
+                                    class="feather-24 icon-margin me-1"></i> Education</p>
+                            <hr>
+                            <!--[if BLOCK]><![endif]-->                              <div class="d-flex reveal reveal-scale-up">
+                                  <div class="me-4 mt-2">
+                                    <img src="assets/img/logos/um.png" alt="State University of Malang" class="logo-experience">
+                                  </div>
+                                  <div class="flex-grow-1">
+                                      <p class="bold text-dynamic-primary"
+                                        href="en/um.html" wire:navigate>
+                                        State University of Malang</p>
+                                      <p class="text-sm text-dynamic-primary" style="margin-top: -15px;"
+                                        href="en/um.html" wire:navigate>
+                                        Bachelor of Informatics Engineering
+                                      </p>
+                                  </div>
+                                  <div class="flex-shrink-0">
+                                      <p class="text-sm text-dynamic-secondary"
+                                        href="en/um.html" wire:navigate>
+                                        Aug 2022 - Present</p>
+                                  </div>
+                              </div>
+                                                          <div class="d-flex reveal reveal-scale-up">
+                                  <div class="me-4 mt-2">
+                                    <img src="assets/img/logos/smkn1psr.png" alt="SMKN 1 Pasuruan" class="logo-experience">
+                                  </div>
+                                  <div class="flex-grow-1">
+                                      <p class="bold text-dynamic-primary"
+                                        href="en/skensa.html" wire:navigate>
+                                        SMKN 1 Pasuruan</p>
+                                      <p class="text-sm text-dynamic-primary" style="margin-top: -15px;"
+                                        href="en/skensa.html" wire:navigate>
+                                        Computer and Network Engineering
+                                      </p>
+                                  </div>
+                                  <div class="flex-shrink-0">
+                                      <p class="text-sm text-dynamic-secondary"
+                                        href="en/skensa.html" wire:navigate>
+                                        Jul 2019 - Jun 2022</p>
+                                  </div>
+                              </div>
+                            <!--[if ENDBLOCK]><![endif]-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-hidden">
+            <div class="container pb-5 mb-5">
+                <div class="row">
+                    <div class="col-tech-stack col-12 col-lg-6 d-flex align-items-center order-2 order-lg-1">
+                        <div>
+                            <h1 class="bold text-dynamic-primary reveal reveal-left text-center text-lg-start">
+                                I've used this things to create powerful software that helping people and businesses 🥳
+                            </h1>
+                            <p class="text-dynamic-primary text-xl reveal reveal-left text-center text-lg-start">
+                                Technology without idea and collaboration is nothing. I combining technologies, tools and frameworks to deliver high-quality software.
+                            </p>
+                            <div
+                                class="d-flex flex-wrap tech-stack mt-4
+                                reveal justify-content-center justify-content-lg-start">
+                                <img src="assets/img/tech_stack/javascript.png" alt="">
+                                <img src="assets/img/tech_stack/android-studio.png" alt="">
+                                <img src="assets/img/tech_stack/php.png" alt="">
+                                <img src="assets/img/tech_stack/csharp.png" alt="">
+                                <img src="assets/img/tech_stack/firebase.png" alt="">
+                                <img src="assets/img/tech_stack/laravel.png" alt="">
+                                <img src="assets/img/tech_stack/java.png" alt="">
+                            </div>
+                            <p class="text-dynamic-secondary mt-1 reveal text-center text-lg-start">
+                                and more...</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="tags-container d-flex justify-content-start justify-content-lg-center reveal reveal-scale-up">
+    <div class="overlay-tag"></div>
+    <ul class="tags-cloud text-dynamic-secondary">
+        <li class='tag'><span class='wrap'>Android Studio</span></li>
+        <li class='tag'><span class='wrap'>C#</span></li>
+        <li class='tag'><span class='wrap'>CSS</span></li>
+        <li class='tag'><span class='wrap'>Firebase</span></li>
+        <li class='tag'><span class='wrap'>AWS</span></li>
+        <li class='tag'><span class='wrap'>GitHub</span></li>
+        <li class='tag'><span class='wrap'>HTML</span></li>
+        <li class='tag'><span class='wrap'>Javascript</span></li>
+        <li class='tag'><span class='wrap'>VSCode</span></li>
+        <li class='tag'><span class='wrap'>Prolog</span></li>
+        <li class='tag'><span class='wrap'>Unity</span></li>
+        <li class='tag'><span class='wrap'>Laravel</span></li>
+        <li class='tag'><span class='wrap'>Litespeed</span></li>
+        <li class='tag'><span class='wrap'>Mariadb</span></li>
+        <li class='tag'><span class='wrap'>jQuery</span></li>
+        <li class='tag'><span class='wrap'>Bootstrap</span></li>
+        <li class='tag'><span class='wrap'>Java</span></li>
+        <li class='tag'><span class='wrap'>Rust</span></li>
+        <li class='tag'><span class='wrap'>MySQL</span></li>
+        <li class='tag'><span class='wrap'>Node.js</span></li>
+        <li class='tag'><span class='wrap'>PHP</span></li>
+        <li class='tag'><span class='wrap'>SQL Server</span></li>
+        <li class='tag'><span class='wrap'>Linux</span></li>
+        <li class='tag'><span class='wrap'>Julia</span></li>
+        <li class='tag'><span class='wrap'>Visual Studio</span></li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <h3 class="bold text-dynamic-primary reveal reveal-left text-center text-lg-start">
+                        Certifications
+                    </h3>
+                    <p class="text-dynamic-primary text-xl reveal reveal-left text-center text-lg-start">
+                        I'm always learning new things and improving my skills. Here are some of my certifications.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <!--[if BLOCK]><![endif]-->                            
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/dicoding-idcamp.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/idcamp-logo1.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 30, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                            Deep Learning and Neural Networks: Exploring the Depths of AI</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                            IDCamp Indonesia × Dicoding Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/dicoding-bootcamp.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/dicoding.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 27, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Dicoding Bootcamp Trial - Session 4</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              Dicoding Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/revou-1.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/revoyu.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 08 - July 19, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Mini Course Data Analytics #Batch July 8</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              Revolution of You (RevoU)</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/dicoding-161.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/dicoding.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 26, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Machine Learning in Google Cloud | Introduction to TensorFlow and Its Ecosystem</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              Dicoding Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/dicoding-160.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/dicoding.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 19, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Machine Learning | Seeing the World with AI: An Exploration of Computer Vision</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              Dicoding Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/dicoding-159.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/dicoding.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 11, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Data Science | Database 101: The Surefire Move to Be Proficient in Data!</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              Dicoding Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/cisco-2.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/cisco-logo.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      April 01, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              IT Essentials v8.1 course as part of the Cisco Networking Academy® program</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              State University of Malang</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/learnovaum.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/learnovaum1.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      February 01 - March 09, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              English for IT Professionals offered by LearnovaUM</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              State University of Malang</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/cisco-1.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/cisco-logo.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      March 08 - May 07, 2023</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              IT Essentials v8.0 course as part of the Cisco Networking Academy® program</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              State University of Malang</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/mit.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/maspionit.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      May 17, 2022</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                            Competency Assessment Network Security Troubleshooting on WAN Networks by Maspoin IT</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              Maspion IT</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/amigroup.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/oip2.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      May 17, 2022</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Competency Assessment Network Security Troubleshooting on WAN Networks by Amigroup PT Awak Media Indonesia</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              Amigroup PT Awak Media Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>  
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/bnsp.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/bnsp.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      June 06, 2022</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Competence Information And Communications Sector, Computer And Network Engineering Sub Sector by LSP BNSP</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              Indonesian Professional Certification Authority (BNSP)</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/pte.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/pte.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      June 03, 2022</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              English Testing Certer Proficiency Test of English</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              International Test Of English Proficiency</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/myskill-graphic.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/myskill.webp"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 23, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Graphic Design - Designing Using Canva</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              MySkill Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/myskill-software.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/myskill.webp"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 18, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Software Engineering - JavaScript Introduction</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              MySkill Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/myskill-uiux.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/myskill.png"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 16, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              UI/UX Research and Design - UI/UX Design Fundamental</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              MySkill Indonesia × Swiss German University</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/myskill-excel.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/myskill.webp"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 09, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Microsoft Excel - Conditional IF-Else</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              MySkill Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/myskill-da1.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/myskill.webp"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      July 03, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Data Analysis - Data Analysis Fundamental</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              MySkill Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                                                    <div class="col-12 col-md-6 mb-4">
+                                <a href="en/myskill-da2.html" class="card-click reveal reveal-right" wire:navigate>
+                                  <div class="card" style="height: 100%;">
+                                      <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                          <div class="d-flex">
+                                              <div class="flex-grow-1">
+                                                  <img class="img-certification"
+                                                      src="assets/img/certifications/myskill.webp"
+                                                      alt="">
+                                              </div>
+                                              <div class="flex-shrink-0 text-end">
+                                                  <p class="text-sm text-dynamic-secondary">
+                                                      June 25, 2024</p>
+                                              </div>
+                                          </div>
+                                          <p class="bold text-dynamic-primary">
+                                              Data Analysis - Looker Data Studio</p>
+                                          <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                              MySkill Indonesia</p>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                        <!--[if ENDBLOCK]><![endif]-->
+                    </div>
+                </div>
+                <hr class="mt-5">
+            </div>
+        </div>
+        <div class="container pt-5 pb-5">
+            <h3 class="bold text-dynamic-primary reveal reveal-left text-center text-lg-start">
+                Achievements
+            </h3>
+            <p class="text-dynamic-primary text-xl reveal reveal-left text-center text-lg-start">
+                Some of the best experiences in my life.
+            </p>
+            <div class="row mt-4">
+                <!--[if BLOCK]><![endif]-->                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="en/pkm.html" class="card-click reveal reveal-right" wire:navigate>
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="award"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary">
+                                                Malang, Indonesia -
+                                                Jan 11 - Feb 16, 2024</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;">
+                                                Students Creativity Program of Entrepreneurship - Community Empowerment Programs (PKM - PM) #Batch 37</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                                Simbelmawa</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/pkm.html" wire:navigate>
+                                                🎖 details... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="en/gorden.html" class="card-click reveal reveal-right" wire:navigate>
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="award"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary">
+                                                Malang, Indonesia -
+                                                Feb 14, 2024</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;">
+                                                Business Marketing Website ISTANA GORDEN (HKI)</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                                State University of Malang</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/gorden.html" wire:navigate>
+                                                🎖 details... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="en/fesmaro.html" class="card-click reveal reveal-right" wire:navigate>
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="award"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary">
+                                                Malang, Indonesia -
+                                                Mar 13, 2023</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;">
+                                                2nd Place in App Development at Electrical and Informatics Engineering Student Creativity Festival (FESMARO)</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                                Department of Electrical and Informatics Engineering, State University of Malang</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/fesmaro.html" wire:navigate>
+                                                🥈 details... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="en/psikologi.html" class="card-click reveal reveal-right" wire:navigate>
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="award"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary">
+                                                Malang, Indonesia -
+                                                Mar 06, 2023</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;">
+                                                Psychological Mentor Application by Utilizing Internet and Web Network Technology to Help Overcome Psychological Problems in the Young Generation (HKI)</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                                State University of Malang</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/psikologi.html" wire:navigate>
+                                                🎖 details... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="en/eligible.html" class="card-click reveal reveal-right" wire:navigate>
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="award"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary">
+                                                Pasuruan, Indonesia -
+                                                May 20, 2022</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;">
+                                                1st Place in Eligible Students of Informatics Engineering Class of 2022</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                                SMKN 1 Pasuruan</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/eligible.html" wire:navigate>
+                                                🥇 details... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="en/lc.html" class="card-click reveal reveal-right" wire:navigate>
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="award"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary">
+                                                Bandar Lampung, Indonesia -
+                                                Nov 12, 2021</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;">
+                                                1st Place in Exclusive Student Leadership Mentoring Program Competition throughout Indonesia 2021</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                                PT Lampung Cerdas Mendunia</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/lc.html" wire:navigate>
+                                                🥇 details... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="col-12 col-lg-6 mb-4">
+                        <a href="en/bromo.html" class="card-click reveal reveal-right" wire:navigate>
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="award"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary">
+                                                Surabaya, Indonesia -
+                                                Mar 14, 2020</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;">
+                                                Bronze Medal Herbana Bromo KOM Challenge 2020</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;">
+                                                Dinas Pemuda dan Olahraga Prov. Jawa Timur</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/bromo.html" wire:navigate>
+                                                🥉 details... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="mt-5">          
+                <!--[if ENDBLOCK]><![endif]-->
+            </div>
+        </div>
+        <div class="container pt-5 pb-5">
+            <h3 class="bold text-dynamic-primary reveal reveal-left text-center text-lg-start">
+                Organization, Volunteers, Event and Other
+            </h3>
+            <p class="text-dynamic-primary text-xl reveal reveal-left text-center text-lg-start">
+                Have participated in several organizational, volunteer, event, and other experiences so far.
+            </p>
+            <div class="row mt-4">
+                <!--[if BLOCK]><![endif]-->                    <div class="col-12 col-lg-4 mb-4">
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="layers"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary" href="en/kelana.html" wire:navigate>
+                                                Indonesia |
+                                                Jul 18 - 20 Jul 2024</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;" href="en/kelana.html" wire:navigate>
+                                                Volunteer at the Mental Health Campaign "How TO Handle Panic Attack"</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;" href="en/kelana.html" wire:navigate>
+                                                Kelana Jiwa - Mental Health Platform</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/kelana.html" wire:navigate>
+                                                details Volunteers... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <div class="col-12 col-lg-4 mb-4">
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="layers"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary" href="en/nutrition.html" wire:navigate>
+                                                Bekasi, Indonesia |
+                                                Jul 10 - Jul 13 2024</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;" href="en/nutrition.html" wire:navigate>
+                                                Nutrition Health Promotor - Nutrition Volunteer Campaign 2024</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;" href="en/nutrition.html" wire:navigate>
+                                                Undergraduate Nutrition Study Program, Faculty of Health Sciences, Suherman Medika University</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/nutrition.html" wire:navigate>
+                                                details Volunteers... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <div class="col-12 col-lg-4 mb-4">
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="layers"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary" href="en/tbranger.html" wire:navigate>
+                                                Jember, Indonesia |
+                                                Jun 22 - Jul 03 2024</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;" href="en/tbranger.html" wire:navigate>
+                                                Volunteers Digital Campaign TB Ranger</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;" href="en/tbranger.html" wire:navigate>
+                                                Sekawan's TB Jember</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/tbranger.html" wire:navigate>
+                                                details Volunteers... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <hr class="mb-4">          
+                                    <div class="col-12 col-lg-4 mb-4">
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="activity"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary" href="en/positron.html" wire:navigate>
+                                                Malang, Indonesia |
+                                                Aug 23 - Dec 20 2022</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;" href="en/positron.html" wire:navigate>
+                                                New Electrical Engineering Student Orientation Program (POSITRON) - Member</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;" href="en/positron.html" wire:navigate>
+                                                Department of Electrical and Informatics Engineering, State University of Malang</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/positron.html" wire:navigate>
+                                                details Organization... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <div class="col-12 col-lg-4 mb-4">
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="activity"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary" href="en/character.html" wire:navigate>
+                                                Malang, Indonesia |
+                                                Oct 29 - Oct 30 2022</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;" href="en/character.html" wire:navigate>
+                                                Character Building National Insight - Participant</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;" href="en/character.html" wire:navigate>
+                                                Faculty of Engineering, State University of Malang</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/character.html" wire:navigate>
+                                                details Organization... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <div class="col-12 col-lg-4 mb-4">
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="activity"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary" href="en/pkkmb.html" wire:navigate>
+                                                Malang, Indonesia |
+                                                Aug 17 - Aug 22 2022</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;" href="en/pkkmb.html" wire:navigate>
+                                                Introduction to Campus Life for New Students (PKKMB) - Member</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;" href="en/pkkmb.html" wire:navigate>
+                                                State University of Malang</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/pkkmb.html" wire:navigate>
+                                                details Organization... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <hr class="mb-4">
+                                    <div class="col-12 col-lg-4 mb-4">
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="video"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary" href="en/webinar.html" wire:navigate>
+                                                Indonesia |
+                                                Aug 17 - Aug 22 2022</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;" href="en/webinar.html" wire:navigate>
+                                                Youth of Champions - Participant</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;" href="en/webinar.html" wire:navigate>
+                                                ...</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/webinar.html" wire:navigate>
+                                                details Webinar... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    <div class="col-12 col-lg-4 mb-4">
+                            <div class="card reveal reveal-right" style="height: 100%;">
+                                <div class="card__content ps-4 pb-4 pe-4 pt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0 me-3">
+                                            <p class="text-dynamic-secondary"><i data-feather="users"></i></p>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-sm text-dynamic-secondary" href="en/kuliah.html" wire:navigate>
+                                                Indonesia |
+                                                Aug 17 - Aug 22 2022</p>
+                                            <p class="bold text-dynamic-primary" style="margin-top: -10px;" href="en/kuliah.html" wire:navigate>
+                                                Kuliah Tamu - Participant</p>
+                                            <p class="text-sm text-dynamic-primary" style="margin-top: -10px;" href="en/kuliah.html" wire:navigate>
+                                                ...</p>
+                                            <p class="text-sm text-dynamic-secondary" href="en/kuliah.html" wire:navigate>
+                                                details Kuliah Tamu... <i data-feather="external-link" width="17" height="17"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    
+                <!--[if ENDBLOCK]><![endif]-->
+            </div>
+        </div>
+        <div class="bg-dynamic-text-secondary overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 d-flex align-items-center pt-5 pb-5">
+                        <div class="mt-5">
+                            <h1 class="bold text-dynamic-primary reveal reveal-left text-center text-lg-start">
+                                Ready to build something great? Let's talk.
+                            </h1>
+                            <a class="mt-4 btn-hero bold me-sm-4 reveal reveal-left no-underline" href="en/contact.html" wire:navigate>
+                                Hire Me
+                                <div class="arrow-wrapper">
+                                    <div class="arrow"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="plane-container reveal reveal-scale-down">
+    <div class="scene">
+        <div class="cloud cloud--one">
+            <div class="cloud__shift">
+                <div class="cloud__body">
+                    <div>
+                        <div class="cuboid cuboid--cloud">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cuboid cuboid--cloud">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cuboid cuboid--cloud">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cloud cloud--two">
+            <div class="cloud__shift">
+                <div class="cloud__body">
+                    <div>
+                        <div class="cuboid cuboid--cloud">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cuboid cuboid--cloud">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cuboid cuboid--cloud">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cloud cloud--three">
+            <div class="cloud__shift">
+                <div class="cloud__body">
+                    <div>
+                        <div class="cuboid cuboid--cloud">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cuboid cuboid--cloud">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cuboid cuboid--cloud">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="plane__floater">
+            <div class="plane__looper">
+                <div class="plane">
+                    <div class="plane__wheels">
+                        <div class="plane__axle">
+                            <div class="cuboid cuboid--axle">
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                            </div>
+                        </div>
+                        <div class="plane__wheel plane__wheel--left">
+                            <div class="cuboid cuboid--wheel-left">
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                            </div>
+                        </div>
+                        <div class="plane__wheel plane__wheel--right">
+                            <div class="cuboid cuboid--wheel-right">
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plane__body">
+                        <div class="cuboid cuboid--body">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div class="plane__nose">
+                        <div class="cuboid cuboid--nose">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div class="plane__propellor">
+                        <div class="propellor"></div>
+                    </div>
+                    <div class="plane__screen">
+                        <div class="cuboid cuboid--screen">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div class="plane__wings wings">
+                        <div class="wings__top">
+                            <div class="cuboid cuboid--wings-top">
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                            </div>
+                        </div>
+                        <div class="wings__ghost">
+                            <div class="cuboid cuboid--wings-ghost">
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                            </div>
+                        </div>
+                        <div class="wings__bottom">
+                            <div class="cuboid cuboid--wings-bottom">
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                            </div>
+                        </div>
+                        <div class="wings__strobe wings__strobe--left">
+                            <div class="cuboid cuboid--strobe">
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                            </div>
+                        </div>
+                        <div class="wings__strobe wings__strobe--right">
+                            <div class="cuboid cuboid--strobe">
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                                <div class="cuboid__side"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plane__tail">
+                        <div class="cuboid cuboid--tail">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div class="plane__stabilizer plane__stabilizer--horizontal">
+                        <div class="cuboid cuboid--horizontal-stabilizer">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div class="plane__stabilizer plane__stabilizer--vertical">
+                        <div class="cuboid cuboid--vertical-stabilizer">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                    <div class="plane__beacon">
+                        <div class="cuboid cuboid--beacon">
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                            <div class="cuboid__side"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="bg-dynamic-text-secondary">
+      <div x-persist="spotify">
+        <div id="spotify-container" class="container" style="display: none;">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex align-items-center mb-5 mt-5">
+                    <h3 class="bold text-dynamic-primary reveal reveal-left text-center text-lg-start">
+                        Music makes me happy. Let's see what I'm listening to right now on Spotify.<br>
+                        <button class="btn btn-spotify mt-3" id="spotify-play" data-url="">
+                            Listen on
+                            <span class="ms-1">
+                                <img src="assets/img/logos/spotify.png" height="20px" alt="Spotify"
+                                    style="margin-top: -6px;">
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div id="spotify-song-container"
+                        class="container pb-3 d-flex justify-content-center
+                  align-items-center spotify-animation spotify-animation-right active">
+                        <div class="play-containe mb-5 mt-5">
+                            <div class="playing-container">
+                                <div class="playing-photo-container">
+                                    <div class="playing-photo">
+                                        <img id="spotify-album-photo" src="" alt="Spotify Album">
+                                    </div>
+                                </div>
+                                <div class="playing-infos ms-3">
+                                    <span class="playing-infos__title text-dynamic-primary">
+                                        Now listening on Spotify
+                                    </span>
+                                    <span id="spotify-song-title"
+                                        class="playing-infos__music-title text-dynamic-primary"></span>
+                                    <span id="spotify-artist-name"
+                                        class="playing-infos__artist-name text-dynamic-primary"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dynamic-text-secondary">
+        <div class="pt-3 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 text-center text-md-start order-2 order-md-1">
+                        <div>
+                          <small class="text-dynamic-secondary">
+                              Copyright &copy; 2023 - 2024
+                              Miftachul Ulum
+                          </small>
+                        </div>
+                        <div>
+                          <small class="text-dynamic-secondary">
+                              All trademarks, logos and brand names used in this website are the property of their respective owners.
+                          </small>
+                        </div>
+                        <div class="mt-2">
+                          <small class="text-dynamic-secondary d-md-flex gap-2 justify-content-center
+                                        justify-content-md-start">
+                              Build with <span style="color: #e25555;">&#9829;</span> in Pasuruan, using
+                              <div class="d-flex gap-2 footer-icon justify-content-center mt-3 mb-3 mt-md-0 mb-md-0">
+                                <a href="https://laravel.com/" target="_blank" class="text-dynamic-secondary">
+                                  <img src="assets/img/logos/laravel.png" height="20px" alt="Laravel">
+                                </a>
+                                <a href="https://livewire.laravel.com/" target="_blank" class="text-dynamic-secondary">
+                                  <img src="assets/img/logos/livewire.png" height="20px" alt="Livewire">
+                                </a>
+                                <a href="https://getbootstrap.com/" target="_blank" class="text-dynamic-secondary">
+                                  <img src="assets/img/logos/bootstrap.png" height="20px" alt="Bootstrap">
+                                </a>
+                                <div class="ms-2">
+                                  <a class="footer-link-source semibold"
+                                      href="https://github.com/MiftachulUlum">
+                                      View source
+                                    <i data-feather="arrow-right" class="icon-margin feather-16"></i>
+                                  </a>
+                                </div>
+                              </div>
+                          </small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 order-1 order-md-2">
+                        <div class="d-flex justify-content-center
+                                    justify-content-md-end mb-5 mb-md-0 social-icons gap-4 h-100 align-items-center">
+                            <a href="https://linkedin.com/in/miftachul-ulum-52bbba285" target="_blank">
+                              <i class="bi bi-linkedin text-xl"></i>
+                            </a>
+                            <a href="https://github.com/MiftachulUlum" target="_blank">
+                              <i class="bi bi-github text-xl"></i>
+                            </a>
+                            <a href="https://instagram.com/miftaa_id" target="_blank">
+                              <i class="bi bi-instagram text-xl"></i>
+                            </a>
+                            <a href="https://youtube.com/@miftaa_id" target="_blank">
+                              <i class="bi bi-youtube text-xl"></i>
+                            </a>
+                            <a href="mailto:miftachululum585@gmail.com" target="_blank">
+                              <i class="bi bi-envelope text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" id="searchModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="search-modal modal-content bg-dynamic-text-secondary text-dynamic-primary">
+                <div class="modal-body">
+                    <div class="input-group search-group text-dynamic-primary">
+                        <span class="input-group-text bg-transparent border-0 text-primary" id="basic-addon1">
+                            <i data-feather="search" class="feather-24"></i>
+                        </span>
+                        <input id="searchInput" type="text" class="form-control bg-transparent border-0"
+                            placeholder="Search projects, blog, etc..." aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="languageModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="search-modal modal-content bg-dynamic-text-secondary text-dynamic-primary">
+                <div class="modal-body">
+                    <p class="semibold">Select language</p>
+                    <div class="modal-items-container">
+                      <a class="mt-1 item-list "
+                        href="id.html"
+                        wire:navigate>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/flags/id.png" alt="Indonesia" height="20px">
+                                <span class="ms-2">Bahasa Indonesia</span>
+                            </div>
+                        </div>
+                      </a>
+                      <a class="mt-1 item-list active"
+                        href="index.html"
+                        wire:navigate>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/flags/en.png" alt="English" height="20px">
+                                <span class="ms-2">English</span>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script data-navigate-once src="assets/js/bootstrap.bundle.min.js"></script>
+    <script data-navigate-once src="assets/js/init.js"></script>
+    <script src="livewire/livewire.min.js"   data-csrf="1KEtKWO3Ai8JbmHnsdCJlUChjZ2PHHGFjuCHuT8Q" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="assets/js/sweetalert2.min.js"></script>
+    <script src="assets/js/fahli.js"></script>
+    <script data-navigate-once src="assets/js/api.js"></script>
+    <script>
+      document.addEventListener('livewire:navigated', () => {
+        reveal();
+        window.scrollTo(0, 0);
+      });
+    </script>
+        <script src="assets/js/magic_text.js"></script>
+    <script src="assets/js/tags.js"></script>
+    <script data-navigate-once src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/plane.js"></script>
+<center><font size="2">This is the free demo result. For a full version of this website, please go to  <a href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">Website Downloader</a></font></center></body>
+</html>
